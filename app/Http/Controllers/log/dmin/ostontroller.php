@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Blog;
+namespace App\Http\Controllers\log\dmin;
 
-use App\Models\BlogPost;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-
-class PostController extends BaseController
+class ostontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +15,6 @@ class PostController extends BaseController
     public function index()
     {
         //
-        $items = BlogPost::all();
-
-        return view('blog.posts.index', compact('items'));
     }
 
     /**
